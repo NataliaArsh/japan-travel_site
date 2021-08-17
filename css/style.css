@@ -856,6 +856,7 @@ body {
   font-size: 18px;
   line-height: 24px;
   color: #FFFFFF;
+  background: rgba(21, 24, 36, 0.6);
 }
 
 .sity-card__picture figcaption .sity-card__like {
