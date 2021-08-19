@@ -368,6 +368,9 @@ body {
     max-width: 118px;
     background: #006DFE;
     padding: 11px 19px;
+    &:focus, &:hover, &:active {
+            background: rgb(15, 77, 158);
+        }
 }
 
 

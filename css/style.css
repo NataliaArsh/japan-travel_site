@@ -892,3 +892,7 @@ body {
   background: #006DFE;
   padding: 11px 19px;
 }
+
+.sity-card__link:focus, .sity-card__link:hover, .sity-card__link:active {
+  background: #0f4d9e;
+}
