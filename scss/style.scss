@@ -55,16 +55,21 @@ body {
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 999;
+    transition: .2s linear;
     a:hover, a:active, a:focus {
         opacity: 0.8;
     }
+}
+.header_active { // активируется при скролинге
+    background: #0E1D28;
 }
 .header__wrapper {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-end;
     justify-content: space-between;
-    padding: 56px 0 15px;
+    padding: 56px 0 20px;
 }
 .header__list {
     display: flex;
@@ -375,9 +380,9 @@ body {
 
 // video style 
 .video {
+    margin: 0 auto;
     max-width: 1440px;
     position: relative;
-    //aspect-ratio: 16 / 9;
     padding-bottom: 56.25%;
     iframe {
         position: absolute;

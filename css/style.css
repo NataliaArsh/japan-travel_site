@@ -470,10 +470,17 @@ body {
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 999;
+  -webkit-transition: .2s linear;
+  transition: .2s linear;
 }
 
 .header a:hover, .header a:active, .header a:focus {
   opacity: 0.8;
+}
+
+.header_active {
+  background: #0E1D28;
 }
 
 .header__wrapper {
@@ -488,7 +495,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 56px 0 15px;
+  padding: 56px 0 20px;
 }
 
 .header__list {
@@ -898,6 +905,7 @@ body {
 }
 
 .video {
+  margin: 0 auto;
   max-width: 1440px;
   position: relative;
   padding-bottom: 56.25%;
