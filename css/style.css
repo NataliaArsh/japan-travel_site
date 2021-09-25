@@ -439,6 +439,7 @@ body {
   font-size: 35px;
   line-height: 42px;
   padding-bottom: 10px;
+  padding-right: 30px;
   position: relative;
 }
 
@@ -595,6 +596,18 @@ body {
   color: #FFFFFF;
 }
 
+@media (max-width: 950px) {
+  .intro__search input {
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 767px) {
+  .intro__search input {
+    padding: 0 0 18px 43px;
+  }
+}
+
 .intro__search button {
   padding: 15px 39px;
   background: #1B7DFF;
@@ -607,6 +620,12 @@ body {
 
 .intro__search button:focus, .intro__search button:hover, .intro__search button:active {
   background: #0f4d9e;
+}
+
+@media (max-width: 950px) {
+  .intro__search button {
+    margin-bottom: 25px;
+  }
 }
 
 .benefits {
@@ -635,6 +654,12 @@ body {
   background: #FFFFFF;
 }
 
+@media (max-width: 767px) {
+  .benefits__title {
+    padding-bottom: 50px;
+  }
+}
+
 .benefits__cards {
   padding: 32px 100px 112px;
   display: -ms-grid;
@@ -657,6 +682,19 @@ body {
 
 .benefits__card p {
   margin-bottom: 39px;
+}
+
+@media (max-width: 600px) {
+  .benefits__card p {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .benefits__card {
+    grid-column: span 3;
+    margin-bottom: 50px;
+  }
 }
 
 .benefits__image {
@@ -685,6 +723,12 @@ body {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+}
+
+@media (max-width: 645px) {
+  .places__title {
+    margin-bottom: 15px;
+  }
 }
 
 .places__cards {
@@ -778,6 +822,13 @@ body {
           column-gap: 77px;
 }
 
+@media (max-width: 767px) {
+  .tours__card {
+    -webkit-column-gap: 40px;
+            column-gap: 40px;
+  }
+}
+
 .tours__card-top {
   margin-bottom: 77px;
 }
@@ -793,6 +844,12 @@ body {
   padding-left: 47px;
 }
 
+@media (max-width: 767px) {
+  .tours__info {
+    padding-left: 15px;
+  }
+}
+
 .tours__info h3 {
   font-weight: 500;
   font-size: 30px;
@@ -800,10 +857,22 @@ body {
   margin-bottom: 45px;
 }
 
+@media (max-width: 767px) {
+  .tours__info h3 {
+    margin-bottom: 30px;
+  }
+}
+
 .tours__info p {
   font-size: 16px;
   line-height: 24px;
   margin-bottom: 58px;
+}
+
+@media (max-width: 767px) {
+  .tours__info p {
+    margin-bottom: 30px;
+  }
 }
 
 .visit {
@@ -820,6 +889,12 @@ body {
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
   gap: 58px;
+}
+
+@media (max-width: 767px) {
+  .visit__cards {
+    gap: 30px;
+  }
 }
 
 .visit__card {
@@ -919,4 +994,59 @@ body {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+footer {
+  background: #0E1D28;
+}
+
+footer a:focus, footer a:hover, footer a:active {
+  opacity: 0.8;
+}
+
+.footer__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 118px 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.footer__list {
+  padding-right: 139.5px;
+}
+
+.footer__list:last-child {
+  padding-right: 0;
+}
+
+.footer__list li {
+  padding-bottom: 3px;
+}
+
+.footer__list li:last-child {
+  padding-bottom: 0;
+}
+
+.footer__list .footer__list-title {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.footer__list a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #FFFFFF;
 }
