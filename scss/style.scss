@@ -276,7 +276,7 @@ body {
     column-gap: 55px;
     @media (max-width: 950px) {
         padding: 32px 15px 82px;
-        column-gap: 33px;
+        column-gap: 40px;
     }
 }
 .benefits__card {
@@ -292,7 +292,7 @@ body {
         margin-bottom: 39px;
         @media (max-width: 600px) {
         margin-bottom: 20px;
-    }
+        }
     }
     @media (max-width: 600px) {
         grid-column: span 3;
@@ -339,6 +339,9 @@ body {
     img {
         width: 100%;
         object-fit: cover;
+        @media (max-width: 950px) {
+            height: 354px;
+        }
     }
     &::after {
         display: block;
@@ -382,6 +385,9 @@ body {
             transform: scale(1.05);
         }
     }
+    @media (max-width: 950px) {
+        grid-column: span 6;
+    }
 }
 .places__pic-lg {
     height: 354px;
@@ -401,8 +407,8 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 77px;
-    @media (max-width: 767px) {
-        column-gap: 40px;
+    @media (max-width: 950px) {
+        column-gap: 50px;
     }
 }
 .tours__card-top {
@@ -410,28 +416,29 @@ body {
 }
 .tours__image {
     max-width: 597px;
+    align-self: center;
 }
 .tours__info {
     align-self: center;
     padding-left: 47px;
-    @media (max-width: 767px) {
-        padding-left: 15px;
+    @media (max-width: 950px) {
+        padding-left: 0;
     }
     h3 {
         font-weight: 500;
         font-size: 30px;
         line-height: 40px;
         margin-bottom: 45px;
-        @media (max-width: 767px) {
-            margin-bottom: 30px;
+        @media (max-width: 950px) {
+            margin-bottom: 20px;
         }
     }
     p {
         font-size: 16px;
         line-height: 24px;
         margin-bottom: 58px;
-        @media (max-width: 767px) {
-            margin-bottom: 30px;
+        @media (max-width: 950px) {
+            margin-bottom: 20px;
         }
     }
 
