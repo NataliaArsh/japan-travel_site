@@ -242,7 +242,7 @@ body {
 .benefits {
     margin-bottom: 131px;
     @media (max-width: 950px) {
-        margin-bottom: 100px;
+        margin-bottom: 120px;
     }
 }
 .benefits__wrap {
@@ -311,7 +311,7 @@ body {
 .places {
     margin-bottom: 131px;
     @media (max-width: 950px) {
-        margin-bottom: 100px;
+        margin-bottom: 120px;
     }
 }
 .places__header {
@@ -400,7 +400,7 @@ body {
 .tours {
     margin-bottom: 139px;
     @media (max-width: 950px) {
-        margin-bottom: 100px;
+        margin-bottom: 120px;
     }
 }
 .tours__card {
@@ -448,7 +448,7 @@ body {
 .visit {
     margin-bottom: 144px;
     @media (max-width: 950px) {
-        margin-bottom: 100px;
+        margin-bottom: 120px;
     }
 }
 .visit__title {
@@ -456,14 +456,18 @@ body {
 }
 .visit__cards {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     gap: 58px;
-    @media (max-width: 767px) {
-        gap: 30px;
+    @media (max-width: 950px) {
+        column-gap: 30px;
+        row-gap: 55px;
     }
 }
 .visit__card {
-    grid-column: span 1;
+    grid-column: span 2;
+    @media (max-width: 950px) {
+        grid-column: span 3;
+    }
 }
 .sity-card {
     display: grid;
@@ -474,6 +478,9 @@ body {
     max-width: 386px;
     max-height: 100%;
     margin-bottom: 45px;
+    @media (max-width: 950px) {
+        margin-bottom: 30px;
+    }
     figcaption {
         position: absolute;
         bottom: 0;
@@ -508,7 +515,7 @@ body {
     }
 }
 .sity-card__text {
-    margin-bottom: 31px;
+    margin-bottom: 30px;
 }
 .sity-card__link {
     display: block;
@@ -552,11 +559,11 @@ footer {
     flex-wrap: wrap;
     padding: 118px 0;
     justify-content: space-between;
-
+    @media (max-width: 950px) {
+        padding: 90px 0;
+    }
 }
 .footer__logo {
-}
-.footer__link {
 }
 .footer__menu {
     display: flex;

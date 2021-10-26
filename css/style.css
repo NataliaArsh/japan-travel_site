@@ -730,7 +730,7 @@ body {
 
 @media (max-width: 950px) {
   .benefits {
-    margin-bottom: 100px;
+    margin-bottom: 120px;
   }
 }
 
@@ -833,7 +833,7 @@ body {
 
 @media (max-width: 950px) {
   .places {
-    margin-bottom: 100px;
+    margin-bottom: 120px;
   }
 }
 
@@ -954,7 +954,7 @@ body {
 
 @media (max-width: 950px) {
   .tours {
-    margin-bottom: 100px;
+    margin-bottom: 120px;
   }
 }
 
@@ -1029,7 +1029,7 @@ body {
 
 @media (max-width: 950px) {
   .visit {
-    margin-bottom: 100px;
+    margin-bottom: 120px;
   }
 }
 
@@ -1040,19 +1040,27 @@ body {
 .visit__cards {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
   gap: 58px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 950px) {
   .visit__cards {
-    gap: 30px;
+    -webkit-column-gap: 30px;
+            column-gap: 30px;
+    row-gap: 55px;
   }
 }
 
 .visit__card {
-  grid-column: span 1;
+  grid-column: span 2;
+}
+
+@media (max-width: 950px) {
+  .visit__card {
+    grid-column: span 3;
+  }
 }
 
 .sity-card {
@@ -1068,6 +1076,12 @@ body {
   max-width: 386px;
   max-height: 100%;
   margin-bottom: 45px;
+}
+
+@media (max-width: 950px) {
+  .sity-card__picture {
+    margin-bottom: 30px;
+  }
 }
 
 .sity-card__picture figcaption {
@@ -1115,7 +1129,7 @@ body {
 }
 
 .sity-card__text {
-  margin-bottom: 31px;
+  margin-bottom: 30px;
 }
 
 .sity-card__link {
@@ -1168,6 +1182,12 @@ footer a:focus, footer a:hover, footer a:active {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media (max-width: 950px) {
+  .footer__wrapper {
+    padding: 90px 0;
+  }
 }
 
 .footer__menu {
