@@ -79,7 +79,7 @@ body {
     justify-content: space-between;
     padding: 56px 0 20px;
     @media (max-width: 767px) {
-        padding: 40px 0 20px;
+        padding: 20px 0 20px;
     }
 }
 
@@ -452,22 +452,37 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 77px;
+    align-items: center;
     @media (max-width: 950px) {
         column-gap: 50px;
     }
 }
+
 .tours__card-top {
     margin-bottom: 77px;
+    @media (max-width: 767px) {
+        margin-bottom: 50px;
+    }
 }
 .tours__image {
     max-width: 597px;
-    align-self: center;
+    @media (max-width: 767px) {
+        grid-column: span 2;
+        margin-bottom: 15px;
+    }
+}
+.tours__image-top {
+    @media (max-width: 767px) {
+        grid-row-start: -1;
+    }
 }
 .tours__info {
-    align-self: center;
     padding-left: 47px;
     @media (max-width: 950px) {
         padding-left: 0;
+    }
+    @media (max-width: 767px) {
+        grid-column: span 2;
     }
     h3 {
         font-weight: 500;
@@ -477,6 +492,11 @@ body {
         @media (max-width: 950px) {
             margin-bottom: 20px;
         }
+        @media (max-width: 767px) {
+            font-size: 25px;
+            line-height: 30px;
+            margin-bottom: 15px;
+        }
     }
     p {
         font-size: 16px;
@@ -485,9 +505,12 @@ body {
         @media (max-width: 950px) {
             margin-bottom: 20px;
         }
+        @media (max-width: 950px) {
+            margin-bottom: 15px;
+        }
     }
-
 }
+
 
 // visits style 
 .visit {
@@ -496,11 +519,14 @@ body {
         margin-bottom: 120px;
     }
     @media (max-width: 767px) {
-        margin-bottom: 80px;
+        margin-bottom: 60px;
     }
 }
 .visit__title {
     margin-bottom: 54px;
+    @media (max-width: 767px) {
+        margin-bottom: 35px;
+    }
 }
 .visit__cards {
     display: grid;
@@ -516,6 +542,9 @@ body {
     @media (max-width: 950px) {
         grid-column: span 3;
     }
+    @media (max-width: 767px) {
+        grid-column: span 6;
+    }
 }
 .sity-card {
     display: grid;
@@ -528,6 +557,9 @@ body {
     margin-bottom: 45px;
     @media (max-width: 950px) {
         margin-bottom: 30px;
+    }
+    @media (max-width: 767px) {
+        margin-bottom: 20px;
     }
     figcaption {
         position: absolute;
@@ -562,6 +594,9 @@ body {
 }
 .sity-card__text {
     margin-bottom: 30px;
+    @media (max-width: 767px) {
+        margin-bottom: 20px;
+    }
 }
 .sity-card__link {
     display: block;
@@ -608,10 +643,17 @@ footer {
     @media (max-width: 950px) {
         padding: 90px 0;
     }
+    @media (max-width: 767px) {
+        padding: 50px 0;
+    }
 }
 .footer__menu {
     display: flex;
     flex-wrap: wrap;
+    @media (max-width: 767px) {
+        width: 100%;
+        justify-content: space-between;
+    }
 }
 .footer__list {
     padding-right: 139.5px;
@@ -627,11 +669,27 @@ footer {
     .footer__list-title {
         font-weight: 500;
         font-size: 18px;
+        @media (max-width: 767px) {
+            font-size: 16px;
+        }
     }
     a {
         text-decoration: none;
         font-size: 16px;
         color: #FFFFFF; 
+        @media (max-width: 767px) {
+            font-size: 14px;
+        }
     }  
+    @media (max-width: 767px) {
+        padding-right: 10px;
+        width: 33.3%;
+    }
+}
+.footer__logo {
+    @media (max-width: 767px) {
+        width: 100%;
+        margin-bottom: 20px;
+    }
 }
 

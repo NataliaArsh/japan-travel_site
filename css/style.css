@@ -514,7 +514,7 @@ body {
 
 @media (max-width: 767px) {
   .header__wrapper {
-    padding: 40px 0 20px;
+    padding: 20px 0 20px;
   }
 }
 
@@ -1057,6 +1057,9 @@ body {
       grid-template-columns: repeat(2, 1fr);
   -webkit-column-gap: 77px;
           column-gap: 77px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media (max-width: 950px) {
@@ -1070,23 +1073,43 @@ body {
   margin-bottom: 77px;
 }
 
+@media (max-width: 767px) {
+  .tours__card-top {
+    margin-bottom: 50px;
+  }
+}
+
 .tours__image {
   max-width: 597px;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+}
+
+@media (max-width: 767px) {
+  .tours__image {
+    grid-column: span 2;
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 767px) {
+  .tours__image-top {
+    -ms-grid-row: -1;
+        grid-row-start: -1;
+  }
 }
 
 .tours__info {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
   padding-left: 47px;
 }
 
 @media (max-width: 950px) {
   .tours__info {
     padding-left: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .tours__info {
+    grid-column: span 2;
   }
 }
 
@@ -1103,6 +1126,14 @@ body {
   }
 }
 
+@media (max-width: 767px) {
+  .tours__info h3 {
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 15px;
+  }
+}
+
 .tours__info p {
   font-size: 16px;
   line-height: 24px;
@@ -1112,6 +1143,12 @@ body {
 @media (max-width: 950px) {
   .tours__info p {
     margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 950px) {
+  .tours__info p {
+    margin-bottom: 15px;
   }
 }
 
@@ -1127,12 +1164,18 @@ body {
 
 @media (max-width: 767px) {
   .visit {
-    margin-bottom: 80px;
+    margin-bottom: 60px;
   }
 }
 
 .visit__title {
   margin-bottom: 54px;
+}
+
+@media (max-width: 767px) {
+  .visit__title {
+    margin-bottom: 35px;
+  }
 }
 
 .visit__cards {
@@ -1161,6 +1204,12 @@ body {
   }
 }
 
+@media (max-width: 767px) {
+  .visit__card {
+    grid-column: span 6;
+  }
+}
+
 .sity-card {
   display: -ms-grid;
   display: grid;
@@ -1179,6 +1228,12 @@ body {
 @media (max-width: 950px) {
   .sity-card__picture {
     margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .sity-card__picture {
+    margin-bottom: 20px;
   }
 }
 
@@ -1228,6 +1283,12 @@ body {
 
 .sity-card__text {
   margin-bottom: 30px;
+}
+
+@media (max-width: 767px) {
+  .sity-card__text {
+    margin-bottom: 20px;
+  }
 }
 
 .sity-card__link {
@@ -1288,12 +1349,27 @@ footer a:focus, footer a:hover, footer a:active {
   }
 }
 
+@media (max-width: 767px) {
+  .footer__wrapper {
+    padding: 50px 0;
+  }
+}
+
 .footer__menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+@media (max-width: 767px) {
+  .footer__menu {
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 .footer__list {
@@ -1317,8 +1393,34 @@ footer a:focus, footer a:hover, footer a:active {
   font-size: 18px;
 }
 
+@media (max-width: 767px) {
+  .footer__list .footer__list-title {
+    font-size: 16px;
+  }
+}
+
 .footer__list a {
   text-decoration: none;
   font-size: 16px;
   color: #FFFFFF;
+}
+
+@media (max-width: 767px) {
+  .footer__list a {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer__list {
+    padding-right: 10px;
+    width: 33.3%;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer__logo {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }
