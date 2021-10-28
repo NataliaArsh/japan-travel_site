@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="header">
+    <header class="header">
         <div class="wrapper">
             <div class="header__wrapper">
                 <div class="header__logo">
@@ -17,10 +17,10 @@
                 </div>
                 <nav class="header__menu">
                     <ul class="header__list">
-                        <li><a href="#!">Articles</a></li>
-                        <li><a href="#!">Locations</a></li>
-                        <li><a href="#!">Videos</a></li>
-                        <li><a href="#!">Sign in</a></li>
+                        <li><a href="#articles" class="js-scroll">Articles</a></li>
+                        <li><a href="#locations" class="js-scroll">Locations</a></li>
+                        <li><a href="#videos" class="js-scroll">Videos</a></li>
+                        <li><a href="#sign-in" class="js-scroll">Sign in</a></li>
                     </ul>
                     <div class="header__close">
                         <span class="header__close-line"></span>
@@ -34,9 +34,9 @@
                 </div>
             </div> 
         </div>
-    </div>    
+    </header>    
     <main class="main">
-        <section class="intro">
+        <section class="intro" id="sign-in">
             <div class="wrapper">
                 <h1 class="intro__title">Discover Amazing places in Japan</h1>
                 <div class="intro__text">
@@ -125,7 +125,7 @@
                 </div>
             </div>
         </section>
-        <div class="tours">
+        <div class="tours" id="articles">
             <div class="wrap-full">
                 <div class="tours__card tours__card-top">
                     <div class="tours__image">
@@ -149,7 +149,7 @@
                 </div>
             </div>
         </div>
-        <section class="visit">
+        <section class="visit" id="locations">
             <div class="wrap-full">
                 <h2 class="visit__title section-title">Today top places to visit</h2>
                 <div class="visit__cards">
@@ -261,7 +261,7 @@
             </div>
 
         </section>
-        <div class="video">
+        <div class="video" id="videos">
             <iframe src="https://www.youtube.com/embed/WLIv7HnZ_fE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     </main>
