@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0-modified | 20110126
    License: none (public domain)
@@ -472,6 +479,7 @@ body {
   color: #006DFE;
   background: url(../img/svg/arrow-ico.svg) no-repeat 95% center;
   -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
   transition: 0.2s;
 }
 
@@ -486,6 +494,7 @@ body {
   width: 100%;
   z-index: 999;
   -webkit-transition: .2s linear;
+  -o-transition: .2s linear;
   transition: .2s linear;
 }
 
@@ -574,11 +583,13 @@ body {
   }
   .header__close-line:first-child {
     -webkit-transform: translateY(-50%) rotate(45deg);
-            transform: translateY(-50%) rotate(45deg);
+            -ms-transform: translateY(-50%) rotate(45deg);
+        transform: translateY(-50%) rotate(45deg);
   }
   .header__close-line:last-child {
     -webkit-transform: translateY(-50%) rotate(-45deg);
-            transform: translateY(-50%) rotate(-45deg);
+            -ms-transform: translateY(-50%) rotate(-45deg);
+        transform: translateY(-50%) rotate(-45deg);
   }
   .header__menu {
     width: 100%;
@@ -590,13 +601,16 @@ body {
     z-index: 10;
     padding: 75px;
     -webkit-transform: translateX(100%);
-            transform: translateX(100%);
+            -ms-transform: translateX(100%);
+        transform: translateX(100%);
     -webkit-transition: .2s all linear;
+    -o-transition: .2s all linear;
     transition: .2s all linear;
   }
   .header__menu-active {
     -webkit-transform: translateX(0);
-            transform: translateX(0);
+            -ms-transform: translateX(0);
+        transform: translateX(0);
   }
 }
 
@@ -629,7 +643,8 @@ body {
 .burger__line-second {
   top: 50%;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
 }
 
 .burger__line-third {
@@ -718,6 +733,13 @@ body {
   color: #FFFFFF;
 }
 
+.intro__search input::-moz-placeholder {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+
 .intro__search input::placeholder {
   font-weight: 500;
   font-size: 18px;
@@ -799,7 +821,8 @@ body {
   top: 0;
   left: 0;
   -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
+          -ms-transform: translateY(-100%);
+      transform: translateY(-100%);
   background: #FFFFFF;
 }
 
@@ -824,14 +847,16 @@ body {
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
   -webkit-column-gap: 55px;
-          column-gap: 55px;
+          -moz-column-gap: 55px;
+       column-gap: 55px;
 }
 
 @media (max-width: 950px) {
   .benefits__cards {
     padding: 32px 15px 82px;
     -webkit-column-gap: 40px;
-            column-gap: 40px;
+            -moz-column-gap: 40px;
+         column-gap: 40px;
   }
 }
 
@@ -842,6 +867,7 @@ body {
 }
 
 .benefits__card {
+  -ms-grid-column-span: 1;
   grid-column: span 1;
   display: -ms-grid;
   display: grid;
@@ -874,6 +900,7 @@ body {
 
 @media (max-width: 767px) {
   .benefits__card {
+    -ms-grid-column-span: 3;
     grid-column: span 3;
     margin-bottom: 50px;
   }
@@ -1003,25 +1030,30 @@ body {
 }
 
 .places__card-lg {
+  -ms-grid-column-span: 3;
   grid-column: span 3;
 }
 
 .places__card-sm {
+  -ms-grid-column-span: 2;
   grid-column: span 2;
 }
 
 .places__card:hover {
   -webkit-transition: 0.15s;
+  -o-transition: 0.15s;
   transition: 0.15s;
 }
 
 .places__card:hover img {
   -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+          -ms-transform: scale(1.05);
+      transform: scale(1.05);
 }
 
 @media (max-width: 950px) {
   .places__card {
+    -ms-grid-column-span: 6;
     grid-column: span 6;
   }
 }
@@ -1056,7 +1088,8 @@ body {
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
   -webkit-column-gap: 77px;
-          column-gap: 77px;
+          -moz-column-gap: 77px;
+       column-gap: 77px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1065,7 +1098,8 @@ body {
 @media (max-width: 950px) {
   .tours__card {
     -webkit-column-gap: 50px;
-            column-gap: 50px;
+            -moz-column-gap: 50px;
+         column-gap: 50px;
   }
 }
 
@@ -1085,6 +1119,7 @@ body {
 
 @media (max-width: 767px) {
   .tours__image {
+    -ms-grid-column-span: 2;
     grid-column: span 2;
     margin-bottom: 15px;
   }
@@ -1092,6 +1127,7 @@ body {
 
 @media (max-width: 767px) {
   .tours__image-top {
+    //-ms-grid-row: -1;
         grid-row-start: -1;
   }
 }
@@ -1108,6 +1144,7 @@ body {
 
 @media (max-width: 767px) {
   .tours__info {
+    -ms-grid-column-span: 2;
     grid-column: span 2;
   }
 }
@@ -1188,23 +1225,27 @@ body {
 @media (max-width: 950px) {
   .visit__cards {
     -webkit-column-gap: 30px;
-            column-gap: 30px;
+            -moz-column-gap: 30px;
+         column-gap: 30px;
     row-gap: 55px;
   }
 }
 
 .visit__card {
+  -ms-grid-column-span: 2;
   grid-column: span 2;
 }
 
 @media (max-width: 950px) {
   .visit__card {
+    -ms-grid-column-span: 3;
     grid-column: span 3;
   }
 }
 
 @media (max-width: 767px) {
   .visit__card {
+    -ms-grid-column-span: 6;
     grid-column: span 6;
   }
 }
