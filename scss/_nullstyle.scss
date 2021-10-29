@@ -13,7 +13,7 @@ dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
+div, div, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
   margin: 0;
@@ -30,7 +30,7 @@ time, mark, audio, video {
 }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
+article, aside, details, div, div,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -156,7 +156,7 @@ img {
  * Address margin not present in IE 6/7/8/9, Safari 5, and Opera 11.
  */
 
-figure {
+div {
     margin: 0;
 }
 

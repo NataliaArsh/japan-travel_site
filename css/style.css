@@ -19,7 +19,7 @@ dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
+div, div, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
   margin: 0;
@@ -36,7 +36,7 @@ time, mark, audio, video {
 }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
+article, aside, details, div, div,
 footer, header, hgroup, menu, nav, section {
   display: block;
 }
@@ -158,7 +158,7 @@ img {
 /**
  * Address margin not present in IE 6/7/8/9, Safari 5, and Opera 11.
  */
-figure {
+div {
   margin: 0;
 }
 
@@ -1001,7 +1001,7 @@ body {
   z-index: 2;
 }
 
-.places__card figcaption {
+.places__card div {
   font-weight: bold;
   font-size: 50px;
   line-height: 60px;
@@ -1014,7 +1014,7 @@ body {
 }
 
 @media (max-width: 767px) {
-  .places__card figcaption {
+  .places__card div {
     font-size: 40px;
     line-height: 50px;
   }
@@ -1277,7 +1277,7 @@ body {
   }
 }
 
-.sity-card__picture figcaption {
+.sity-card__picture div {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -1302,7 +1302,7 @@ body {
   background: rgba(21, 24, 36, 0.6);
 }
 
-.sity-card__picture figcaption .sity-card__like {
+.sity-card__picture div .sity-card__like {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1310,12 +1310,12 @@ body {
       flex-wrap: wrap;
 }
 
-.sity-card__picture figcaption .sity-card__like p:first-child {
+.sity-card__picture div .sity-card__like p:first-child {
   padding-right: 19px;
   background: url(../img/svg/like-ico.svg) no-repeat right center;
 }
 
-.sity-card__picture figcaption .sity-card__like p:last-child {
+.sity-card__picture div .sity-card__like p:last-child {
   margin-left: 14px;
   padding-right: 23px;
   background: url(../img/svg/comment-ico.svg) no-repeat right center;
