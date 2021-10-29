@@ -1092,7 +1092,6 @@ body {
 
 @media (max-width: 767px) {
   .tours__image-top {
-    -ms-grid-row: -1;
         grid-row-start: -1;
   }
 }
