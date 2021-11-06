@@ -523,7 +523,7 @@ body {
 
 @media (max-width: 767px) {
   .header__wrapper {
-    padding: 20px 0 20px;
+    padding: 27px 0;
   }
 }
 
@@ -1366,8 +1366,7 @@ body {
 
 @media (max-width: 950px) {
   .video {
-    padding-left: 0;
-    padding-right: 0;
+    margin: 0 auto;
   }
 }
 
