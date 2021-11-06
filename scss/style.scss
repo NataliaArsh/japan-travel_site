@@ -229,6 +229,7 @@ body {
         }
         @media (max-width: 950px) {
             margin-bottom: 25px;
+            background: transparent url(../img/svg/circle-ico.svg) no-repeat left 2px / 20px;
         }
         @media (max-width: 767px) {
             width: 100%;
@@ -625,6 +626,10 @@ body {
         width: 100%;
         height: 100%;
         object-fit: cover;
+    }
+    @media (max-width: 950px) {
+        padding-left: 0;
+        padding-right: 0;
     }
 }
 
