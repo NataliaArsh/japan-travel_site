@@ -1340,7 +1340,6 @@ body {
 }
 
 .video {
-  margin: 0 auto;
   max-width: 1440px;
   position: relative;
   padding-bottom: 56.25%;
@@ -1354,12 +1353,6 @@ body {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-@media (max-width: 950px) {
-  .video {
-    margin: 0 auto;
-  }
 }
 
 footer {
