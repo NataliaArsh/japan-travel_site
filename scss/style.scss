@@ -234,7 +234,7 @@ body {
         }
         &:focus {
             &::placeholder {
-                opacity: 0.5;
+                opacity: 0.1;
             }
         }
         @media (max-width: 950px) {

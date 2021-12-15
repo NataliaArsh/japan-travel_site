@@ -742,19 +742,19 @@ body {
 }
 
 .intro__search input:focus::-webkit-input-placeholder {
-  opacity: 0.5;
+  opacity: 0.1;
 }
 
 .intro__search input:focus:-ms-input-placeholder {
-  opacity: 0.5;
+  opacity: 0.1;
 }
 
 .intro__search input:focus::-ms-input-placeholder {
-  opacity: 0.5;
+  opacity: 0.1;
 }
 
 .intro__search input:focus::placeholder {
-  opacity: 0.5;
+  opacity: 0.1;
 }
 
 @media (max-width: 950px) {
